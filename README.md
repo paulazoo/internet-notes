@@ -20,3 +20,30 @@
     - Winows: WinSCP
     - Mac: Finder sucks. Cyberduck https://cyberduck.io/download/
     - use SFTP protocol, port 22
+
+# Remote Desktop (xubunutu-desktop) for VPS
+- install desktop (xubuntu is faster than ubuntu): `sudo apt install xubuntu-desktop`
+- install xrdp: `sudo apt install xrdp --disable-ipv6`
+- check xrdp has auto-started: `sudo systemctl status xrdp`
+    - to disable (inter-dependent with xrdp-sesman): `sudo systemctl disable xrdp && sudo systemctl disable xrdp xrdp-sesman`
+- add a user for remote desktop: `sudo adduser [user name]`
+    - list users: `less /etc/passwd`
+    - change password: `sudo passwd [user name]`
+- Allow RDP port 3389: `sudo ufw allow 3389/tcp`
+    - firewall customization: `sudo nano /etc/default/ufw`
+    - `sudo ufw disable` and `sudo ufw enable`
+- restart xrdp: `service xrdp restart`
+- `sudo reboot` takes some time...
+
+__Troublshooting__:
+- Stop xrdp `sudo service xrdp stop`
+- Replace these lines from the xrdp start script: `sudo nano /etc/xrdp/startwm.sh`
+```
+test -x /etc/X11/Xsession && exec /etc/X11/Xsession 
+exec /bin/sh /etc/X11/Xsession
+```
+with
+```
+startxfce4
+```
+- Restart xrdp with `sudo service xrdp start`
