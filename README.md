@@ -47,3 +47,6 @@ with
 startxfce4
 ```
 - Restart xrdp with `sudo service xrdp start`
+
+
+- permission denied errors: `sudo chmod -R 777 <directory_name>`
