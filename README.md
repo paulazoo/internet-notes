@@ -59,10 +59,13 @@ startxfce4
 
 
 # Common Ports:
-- 20/21: FTP
+- 20 & 21: FTP
 - 22: SSH
+- 23: Telnet
 - 3389: RDP
 - 80: HTTP
 - 443: HTTPS
 - 53: DNS
-- 25/587: SMTP
+- 25: SMTP
+- 110: POP3
+- 143: IMAP
