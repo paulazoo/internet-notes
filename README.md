@@ -10,7 +10,7 @@
     - Bind to clients and test disconnection for leaks
 - https://gpgtools.org/
     - encryption keys
--https://librewolf.net/
+- https://librewolf.net/
     - Librewolf with uBlock Origin ![](./uBlock_origin_settings.png)
 - https://developers.cloudflare.com/1.1.1.1/setup/
     - Cloudflare DNS resolver instead of ISP's DNS resolver ![](./cloudflare_dns.png)
