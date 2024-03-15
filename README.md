@@ -57,3 +57,12 @@ startxfce4
 
 - permission denied errors: `sudo chmod -R 777 <directory_name>`
 
+
+# Common Ports:
+- 20/21: FTP
+- 22: SSH
+- 3389: RDP
+- 80: HTTP
+- 443: HTTPS
+- 53: DNS
+- 25/587: SMTP
