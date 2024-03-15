@@ -5,10 +5,16 @@
 # Software links:
 - http://squidman.net/squidman/
     - IP Binding
-- http://www.privateinternetaccess.com/
-    - VPN w port forwarding, split tunneling, kill switch
+- www.airvpn.org
+    - VPN w __port forwarding__, split tunneling, kill switch, so works in China
+    - Bind to clients and test disconnection for leaks
 - https://gpgtools.org/
     - encryption keys
+-https://librewolf.net/
+    - Librewolf with uBlock Origin ![](./uBlock_origin_settings.png)
+- https://developers.cloudflare.com/1.1.1.1/setup/
+    - Cloudflare DNS resolver instead of ISP's DNS resolver ![](./cloudflare_dns.png)
+- https://www.torproject.org/download/
 
 # Setting up a VPS:
 - Mac Terminal syntax: ssh user@publicIP
@@ -50,3 +56,4 @@ startxfce4
 
 
 - permission denied errors: `sudo chmod -R 777 <directory_name>`
+
