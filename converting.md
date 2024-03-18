@@ -12,3 +12,6 @@ export JUPYTER_CONFIG_PATH=/opt/homebrew/etc/jupyter
 - export as pdf
 
 `pandoc manual.md -o manual.pdf`
+
+# avi to mp4, without re-encoding so don't specify codecs
+ffmpeg -i input.avi -c:v copy -c:a copy OUTPUT.mp4
