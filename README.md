@@ -13,7 +13,8 @@
 - https://librewolf.net/
     - Librewolf with uBlock Origin ![](./uBlock_origin_settings.png)
 - https://developers.cloudflare.com/1.1.1.1/setup/
-    - Cloudflare DNS resolver instead of ISP's DNS resolver ![](./cloudflare_dns.png)
+    - Cloudflare DNS resolver instead of ISP's DNS resolver ![](./cloudflare_dns.png) ![](./DNS_servers.png)
+    - remember to delete all DNS servers for joining public wifis though
 - https://www.torproject.org/download/
 
 # Setting up a VPS:
