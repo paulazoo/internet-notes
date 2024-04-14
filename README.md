@@ -9,7 +9,7 @@
     - VPN w __port forwarding__, split tunneling, kill switch, so works in China
     - Bind to clients and test disconnection for leaks
 - https://gpgtools.org/
-    - encryption keys
+    - GNU Privacy Guard
 - https://librewolf.net/
     - Librewolf with uBlock Origin ![](./uBlock_origin_settings.png)
 - https://developers.cloudflare.com/1.1.1.1/setup/
@@ -70,3 +70,21 @@ startxfce4
 - 25: SMTP
 - 110: POP3
 - 143: IMAP
+
+
+# GnuPG
+- gpg --full-generate-key
+- gpg --output ~/revocation.crt --gen-revoke reachpaulazhu@gmail.com
+- gpg --list-keys --keyid-format=long
+- gpg --list-secret-keys --keyid-format=long
+```
+sec => 'SECret key'
+ssb => 'Secret SuBkey'
+pub => 'PUBlic key'
+sub => 'public SUBkey'
+```
+- gpg --output public.pgp --armor --export reachpaulazhu@gmail.com
+- gpg --output example.gpg --encrypt --recipient reachpaulazhu@gmail.com example.txt
+- gpg --output example --decrypt example.gpg
+- gpg --import [public_key_file]
+- gpg --verify [signature_file.sig] [file_to_verify]
