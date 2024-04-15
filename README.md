@@ -14,6 +14,13 @@
     - Librewolf with uBlock Origin ![](./uBlock_origin_settings.png)
 - https://developers.cloudflare.com/1.1.1.1/setup/
     - Cloudflare DNS resolver instead of ISP's DNS resolver ![](./cloudflare_dns.png) ![](./DNS_servers.png)
+    ```
+    1.1.1.1
+    1.0.0.1
+    2606:4700:4700::1111
+    2606:4700:4700::1001
+    ```
+    - to check DNS resolvers: `scutil --dns | grep 'nameserver\[[0-9]*\]'`
     - remember to delete all DNS servers for joining public wifis though
 - https://www.torproject.org/download/
 
